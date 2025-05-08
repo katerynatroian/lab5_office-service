@@ -1,10 +1,64 @@
-main 
-    article 
-        section
-            h1 Мета
-    article 
-        section
-            h1 Чому саме ми
-    article 
-        section 
-            h1 Залишити заявку
+main
+
+    section.form-wrapper
+        h1.content-h1 Залишити заявку
+
+        form.application-form
+            .form-columns
+                .form-column
+                    .form-row
+                        label(for="name") ПІБ:
+                        input#name(type="text", name="name")
+                    .form-row
+                        label(for="address") Адреса:
+                        input#address(type="text", name="address")
+                    .form-row
+                        label(for="phone") Телефон:
+                        input#phone(type="tel", name="phone")
+                    .form-row
+                        label(for="email") E-mail:
+                        input#email(type="email", name="email")
+                    button.estimate-btn(type="button") Розрахувати приблизну вартість      
+                .form-column
+                    .form-row
+                        label(for="service") Тип обслуговування:
+                        input#service(type="text", name="service")
+                    .form-row
+                        label(for="date") Бажана дата завершення:
+                        input#date(type="date", name="date")
+                    .upload-box
+                        label.upload-btn(for="file") Додати фото/відео
+                        input#file(type="file", name="file")
+
+            .form-buttons
+                button.submit-btn(type="submit") Залишити заявку
+
+
+    section.requests-section
+        h1.section-title Мої заявки
+
+        .requests-container
+            .filters-panel
+                h2.filters-title Фільтри:
+                label(for="code-input") Код:
+                input#code-input(type="text", name="code")
+
+                label(for="start-date-input") Дата початку:
+                input#start-date-input(type="date", name="start-date")
+
+                label(for="status-input") Статус:
+                input#status-input(type="text", name="status")
+
+            .requests-display
+                .request-card
+                    p Заявка: 209347
+                    p Дата початку робіт: 13.03.2025
+                    p Статус: в процесі
+                    p Виконавець: Іван Іванич
+                    button.update-button Змінити
+                .request-card
+                    p Заявка: 209347
+                    p Дата початку робіт: 13.03.2025
+                    p Статус: в процесі
+                    p Виконавець: Іван Іванич
+                    button.update-button Змінити

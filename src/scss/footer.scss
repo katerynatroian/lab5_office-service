@@ -1,0 +1,22 @@
+footer h1 {
+    padding: 50px;
+}
+.footer-class {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.footer-logo {
+    background-image: url("../img/logo1.png");
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 75px;
+}
+.footer-contacts {
+    flex-direction: column;
+    padding: 25px;
+}
+.footer-p {
+    text-align: start;
+}

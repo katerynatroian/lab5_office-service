@@ -1,2 +1,13 @@
+- var menu=[{"name":"Про нас", "href":""}, {"name":"Послуги", "href":"main"}, {"name":"Контакти", "href":"footer"}]
 header 
-    p Обслуговування офісів
+    div.logo-section
+        div.logo
+            a(href="#")
+    div.header_logo_menu 
+        nav.main-menu 
+            each Menu in menu 
+                a(href="#"+Menu.href)=Menu.name 
+    a(href="#").my-application Мої заявки
+div.img-header
+    div.img-text Ми прагнемо підвищити комфорт і продуктивність роботи користувачів, забезпечуючи  своєчасне реагування на всі запити.
+

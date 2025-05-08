@@ -1,0 +1,56 @@
+$body-color: #C62946;
+$pink: #FFBAC7;
+$dark: #6C0D0D;
+
+$p-font-size: 32px;
+$h2-font-size: 36px;
+
+.header_logo_menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-items: center;
+    width: 95%;
+}
+
+nav {
+    font-weight: 400;
+    font-style: normal;
+    flex-wrap: wrap;
+}
+.main-menu {
+    a {
+        text-decoration: none;
+        margin: 15px;
+        font-size: $p-font-size;
+    }
+}
+.logo-section {
+    width: 30%;
+    justify-content: center;
+}
+.logo {
+    background-image: url("../img/logo1.png");
+    background-repeat: no-repeat;
+    height: 75px;
+    cursor: pointer;
+}
+.my-application {
+    text-decoration: none;
+    font-size: 20px;
+    color: $body-color;
+    padding: 10px;
+    background-color: $pink;
+    border-radius: 200px;
+}
+.img-header {
+    background-image: url("../img/people.png");
+    height: 564px;
+    text-align: center;
+}
+.img-text {
+    color: $dark;
+    font-size: $h2-font-size;
+    font-weight: 500;
+    padding: 110px;
+}

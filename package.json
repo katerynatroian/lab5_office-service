@@ -9,6 +9,8 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "pug": "^3.0.3",
+    "pug-plain-loader": "^1.1.0",
     "sass-embedded": "^1.86.3",
     "typescript": "~5.7.2",
     "vite": "^6.2.0",
