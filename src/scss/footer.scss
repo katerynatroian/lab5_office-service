@@ -1,11 +1,10 @@
+@import "mixin";
+$p-font-size: 32px;
 footer h1 {
     padding: 50px;
 }
 .footer-class {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+    @include flex-container(row, center, center);
 }
 .footer-logo {
     background-image: url("../img/logo1.png");

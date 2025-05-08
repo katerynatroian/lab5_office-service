@@ -1,3 +1,4 @@
+@import "mixin";
 $body-color: #C62946;
 $pink: #FFBAC7;
 $dark: #6C0D0D;
@@ -6,11 +7,8 @@ $p-font-size: 32px;
 $h2-font-size: 36px;
 
 .header_logo_menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    justify-items: center;
-    width: 95%;
+    @include flex-container(row, space-around, center);
+    width: 60%;
 }
 
 nav {
@@ -23,6 +21,12 @@ nav {
         text-decoration: none;
         margin: 15px;
         font-size: $p-font-size;
+        @media (max-width: 1080px) {
+            font-size: 26px;
+        }
+        @media (max-width: 900px) {
+            font-size: 20px;
+        }
     }
 }
 .logo-section {
@@ -53,4 +57,10 @@ nav {
     font-size: $h2-font-size;
     font-weight: 500;
     padding: 110px;
+    @media (max-width: 1080px) {
+        font-size: 30px;
+    }
+    @media (max-width: 900px) {
+        font-size: 25px;
+    }
 }
