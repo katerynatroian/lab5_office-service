@@ -9,12 +9,18 @@ $h2-font-size: 36px;
 .header_logo_menu {
     @include flex-container(row, space-around, center);
     width: 60%;
+    @media (max-width: 431px) {
+        width: 70%;
+    }
 }
 
 nav {
     font-weight: 400;
     font-style: normal;
     flex-wrap: wrap;
+    @media (max-width: 431px) {
+        flex-direction: column;
+    }
 }
 .main-menu {
     a {
@@ -27,11 +33,17 @@ nav {
         @media (max-width: 900px) {
             font-size: 20px;
         }
+        @media (max-width: 431px) {
+            font-size: 10px;
+        }
     }
 }
 .logo-section {
     width: 30%;
     justify-content: center;
+    @media (max-width: 431px) {
+        display: none;
+    }
 }
 .logo {
     background-image: url("../img/logo1.png");
@@ -46,11 +58,17 @@ nav {
     padding: 10px;
     background-color: $pink;
     border-radius: 200px;
+    @media (max-width: 431px) {
+        font-size: 10px;
+    }
 }
 .img-header {
     background-image: url("../img/people.png");
     height: 564px;
     text-align: center;
+    @media (max-width: 431px) {
+        height: 200px;;
+    }
 }
 .img-text {
     color: $dark;
@@ -62,5 +80,9 @@ nav {
     }
     @media (max-width: 900px) {
         font-size: 25px;
+    }
+    @media (max-width: 431px) {
+        font-size: 18px;
+        padding: 60px;
     }
 }

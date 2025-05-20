@@ -8,6 +8,9 @@
     font-size: 42px;
     color: #6C0D0D;
     margin-bottom: 30px;
+    @media (max-width: 431px) {
+        font-size: 30px;
+    }
 }
 .application-form {
     @include flex-container(column, center, center);
@@ -18,6 +21,10 @@
     width: 100%;
     max-width: 80%;
     margin-bottom: 30px;
+    @media (max-width: 431px) {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 .form-column {
     display: flex;
@@ -27,6 +34,9 @@
 }
 .form-row {
     @include flex-container(row, space-between, center);
+    @media (max-width: 431px) {
+        @include flex-container(column, space-between, center);
+    }
 }
 label {
     font-weight: 500;
@@ -34,9 +44,25 @@ label {
     width: 45%;
     text-align: left;
     color: #6C0D0D;
+    @media (max-width: 431px) {
+        font-size: 15px;
+    }
 }
 input {
     @include form-input(#C62946, 8px, 16px);
+    @media (max-width: 431px) {
+        @include form-input(#C62946, 5px, 13px);
+    }
+}
+select {
+    @include form-input(#C62946, 8px, 16px);
+    @media (max-width: 431px) {
+        @include form-input(#C62946, 5px, 13px);
+    }
+}
+p {
+    color:#C62946;
+    font-weight: 800;
 }
 
 .upload-box {
@@ -58,6 +84,11 @@ input {
     &:hover {
       background-color: #8b2534;
     }
+    @media (max-width: 431px) {
+        padding-left: 60px;
+        padding-right: 120px;
+        margin-bottom: 20px;
+    }
 }
 .form-buttons {
     @include flex-container(column, center, center);
@@ -67,6 +98,9 @@ input {
 .estimate-btn,
 .submit-btn {
     @include button-style(#C62946, 20px, 15px 40px);
+    @media (max-width: 431px) {
+        font-size: 15px;
+    }
 }
 
 .submit-btn {

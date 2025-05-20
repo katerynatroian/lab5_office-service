@@ -11,6 +11,9 @@ footer h1 {
     background-repeat: no-repeat;
     width: 300px;
     height: 75px;
+    @media (max-width: 431px) {
+        display: none;
+    }
 }
 .footer-contacts {
     flex-direction: column;

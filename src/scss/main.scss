@@ -55,11 +55,17 @@ header {
     margin-left: 2%;
     margin-right: 2%;
     height: $header-height;
+    @media (max-width: 431px) {
+        height: 50px;
+    }
 }
 main {
     height: $content-height;
     background-color: $pink;
     @media (max-width: 1304px) {
         height: 1900px;
+    }
+    @media (max-width: 431px) {
+        height: 2150px;;
     }
 }

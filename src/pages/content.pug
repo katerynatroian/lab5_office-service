@@ -1,5 +1,4 @@
 main
-
     section.form-wrapper
         h1.content-h1 Залишити заявку
 
@@ -9,30 +8,39 @@ main
                     .form-row
                         label(for="name") ПІБ:
                         input#name(type="text", name="name")
+
                     .form-row
                         label(for="address") Адреса:
                         input#address(type="text", name="address")
+
                     .form-row
                         label(for="phone") Телефон:
                         input#phone(type="tel", name="phone")
+
                     .form-row
                         label(for="email") E-mail:
-                        input#email(type="email", name="email")
-                    button.estimate-btn(type="button") Розрахувати приблизну вартість      
+                        input#email(type="email", name="email")    
+
                 .form-column
                     .form-row
                         label(for="service") Тип обслуговування:
-                        input#service(type="text", name="service")
+                        select#service(name="service")
+                            option(value="Технічне обслуговування") Технічне обслуговування
+                            option(value="Ремонт") Ремонт
+
                     .form-row
                         label(for="date") Бажана дата завершення:
                         input#date(type="date", name="date")
+
                     .upload-box
                         label.upload-btn(for="file") Додати фото/відео
                         input#file(type="file", name="file")
 
+                button.estimate-btn(type="button") Розрахувати приблизну вартість  
+                p#price-output
+
             .form-buttons
                 button.submit-btn(type="submit") Залишити заявку
-
 
     section.requests-section
         h1.section-title Мої заявки
@@ -40,6 +48,7 @@ main
         .requests-container
             .filters-panel
                 h2.filters-title Фільтри:
+
                 label(for="code-input") Код:
                 input#code-input(type="text", name="code")
 
@@ -50,15 +59,3 @@ main
                 input#status-input(type="text", name="status")
 
             .requests-display
-                .request-card
-                    p Заявка: 209347
-                    p Дата початку робіт: 13.03.2025
-                    p Статус: в процесі
-                    p Виконавець: Іван Іванич
-                    button.update-button Змінити
-                .request-card
-                    p Заявка: 209347
-                    p Дата початку робіт: 13.03.2025
-                    p Статус: в процесі
-                    p Виконавець: Іван Іванич
-                    button.update-button Змінити
